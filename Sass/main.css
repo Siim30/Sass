@@ -1,0 +1,135 @@
+/* MEDIA QUERIES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.webpage {
+  background: #fff;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+@media (max-width: 1000px) {
+  .webpage {
+    background: linear-gradient(to right bottom, #ff007a, #fd3093, #f849aa, #f15ebf, #e870d2, #df6cda, #d469e2, #c667ea, #b350ee, #9a38f2, #791ff8, #4300ff);
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/* 
+  ========================================
+  MAIN SIDE
+  ========================================
+  */
+.main-side {
+  display: grid;
+  place-content: center;
+  background: linear-gradient(to right bottom, #ff007a, #fd3093, #f849aa, #f15ebf, #e870d2, #df6cda, #d469e2, #c667ea, #b350ee, #9a38f2, #791ff8, #4300ff);
+  height: 98vh;
+  width: 50vw;
+  margin-right: 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .main-side {
+    background: transparent;
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+}
+@media (max-width: 1000px) {
+  .main-side {
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 30rem;
+    width: 30rem;
+    box-shadow: 0px 0px 5px 21px rgba(0, 0, 0, 0.11);
+  }
+}
+
+.main-container {
+  max-width: 500px;
+  color: #fff;
+}
+
+.main-side h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* 
+  ========================================
+  FORM SIDE
+  ========================================
+  */
+.form-side {
+  height: auto;
+  width: 500px;
+}
+@media (max-width: 1000px) {
+  .form-side {
+    background: transparent;
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+}
+
+.title-container {
+  text-align: center;
+}
+
+.form-title {
+  margin-bottom: 0.5rem;
+}
+
+.form-text {
+  margin-bottom: 1rem;
+  color: #929292;
+}
+@media (max-width: 1000px) {
+  .form-text {
+    color: white;
+  }
+}
+
+input,
+button {
+  display: block;
+  margin: 1rem auto;
+  width: 95%;
+  padding: 0.5rem;
+  border: 2px solid #929292;
+  border-radius: 7px;
+}
+
+.btn {
+  background: linear-gradient(to right bottom, #ff007a, #fd3093, #f849aa, #f15ebf, #e870d2, #df6cda, #d469e2, #c667ea, #b350ee, #9a38f2, #791ff8, #4300ff);
+  font-size: 1rem;
+  color: #fff;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+}
+@media (max-width: 1000px) {
+  .btn {
+    border: 1px solid black;
+  }
+}
+
+.btn:hover {
+  background: #222;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */
